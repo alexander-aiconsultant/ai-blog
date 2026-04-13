@@ -33,7 +33,7 @@ export default function RootLayout({
         <nav className="border-b border-[var(--border)]">
           <div className="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
             <Link href="/" className="text-xl font-bold tracking-tight">
-              Alexander AI
+              Alexander AI Consulting
             </Link>
             <div className="flex gap-8 text-sm text-[var(--muted)]">
               <Link href="/services" className="hover:text-white transition-colors">
