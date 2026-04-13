@@ -21,7 +21,7 @@ export default function About() {
         </p>
         <p>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:alexander.aiconsultant@gmail.com"
             className="text-blue-600 hover:underline"
           >
             Get in touch →
