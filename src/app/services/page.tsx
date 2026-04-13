@@ -15,12 +15,12 @@ const services = [
   {
     title: "Generative AI & LLM Architecture",
     description:
-      "We design the architecture and strategy for your generative AI systems — your engineers build it.",
+      "We design the architecture and strategy for your generative AI systems — giving your team a clear technical direction.",
     items: [
       "Evaluate and select the right foundation models (GPT, Llama, Gemini, etc.) for your specific use case.",
       "Design fine-tuning strategies, RAG pipelines, and prompt engineering frameworks for your proprietary data.",
       "Architect conversational AI systems for customer service, internal knowledge bases, or domain-specific applications.",
-      "Review and optimize existing LLM implementations for accuracy, cost, and latency.",
+      "Review and optimize existing LLM systems for accuracy, cost, and latency.",
     ],
   },
   {
@@ -57,9 +57,9 @@ export default function Services() {
         Strategic AI Consulting
       </h1>
       <p className="mt-4 text-lg text-[var(--muted)] max-w-2xl">
-        You&apos;re not hiring a developer. You&apos;re engaging a senior AI
-        architect with a Ph.D. and Big Tech research experience to solve
-        your hardest problems — so your team can build with confidence.
+        You&apos;re engaging a senior AI architect with a Ph.D. and Big Tech
+        research experience to solve your hardest problems — so your team
+        can move forward with confidence.
       </p>
 
       <div className="mt-16 space-y-16">

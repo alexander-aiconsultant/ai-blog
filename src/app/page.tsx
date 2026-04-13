@@ -13,9 +13,9 @@ export default function Home() {
         </h1>
         <p className="mt-6 text-xl text-[var(--muted)] max-w-2xl leading-relaxed">
           We are a premier AI consultancy that bridges the gap between
-          theoretical breakthroughs and production-ready systems. We don&apos;t
-          just implement APIs — we engineer robust, tailored AI solutions
-          with mathematical precision and scalable architecture.
+          theoretical breakthroughs and production-ready systems. We
+          engineer robust, tailored AI strategies with mathematical
+          precision — turning complex research into scalable business value.
         </p>
         <div className="mt-10 flex gap-4">
           <Link
@@ -68,15 +68,15 @@ export default function Home() {
             <h3 className="text-lg font-semibold">AI Strategy &amp; Readiness</h3>
             <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">
               Identify high-ROI AI use cases, assess data infrastructure
-              readiness, and build actionable roadmaps for your leadership team.
+              readiness, and deliver actionable roadmaps for your leadership team.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="text-lg font-semibold">Generative AI &amp; Automation</h3>
+            <h3 className="text-lg font-semibold">Generative AI &amp; LLM Strategy</h3>
             <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">
-              Fine-tune and deploy LLMs as intelligent knowledge bases,
-              customer agents, or document analysis pipelines tailored to
-              your proprietary data.
+              Design the right LLM architecture, fine-tuning strategy, and
+              prompt engineering framework — tailored to your proprietary
+              data and business goals.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
