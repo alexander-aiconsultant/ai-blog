@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   return {
-    title: post.title,
+    title: `${post.title} — Alexander AI Consulting`,
     description: post.description,
   };
 }
@@ -29,18 +29,18 @@ export default async function BlogPost({
   const post = getPostBySlug(slug);
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="max-w-3xl mx-auto px-6 py-20">
       <Link
-        href="/"
-        className="text-sm text-gray-500 hover:text-gray-800 transition-colors"
+        href="/blog"
+        className="text-sm text-[var(--muted)] hover:text-white transition-colors"
       >
         ← Back to all posts
       </Link>
 
       <article className="mt-8">
-        <header className="mb-8">
+        <header className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight">{post.title}</h1>
-          <div className="mt-4 flex gap-4 text-sm text-gray-500">
+          <div className="mt-4 flex gap-4 text-sm text-[var(--muted)]">
             <time>{post.date}</time>
             <span>{post.readingTime}</span>
           </div>
@@ -48,7 +48,7 @@ export default async function BlogPost({
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                className="text-xs bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] px-2 py-1 rounded"
               >
                 {tag}
               </span>
@@ -56,7 +56,7 @@ export default async function BlogPost({
           </div>
         </header>
 
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-invert prose-lg max-w-none">
           <MDXRemote source={post.content} />
         </div>
       </article>

@@ -1,0 +1,131 @@
+import Link from "next/link";
+
+const services = [
+  {
+    title: "Enterprise AI Strategy & Readiness",
+    description:
+      "Many businesses know they need AI but have no idea where to start. We act as your strategic entry point.",
+    items: [
+      "Use-Case Identification — Assess current workflows to find where AI provides the highest ROI.",
+      "AI Feasibility Assessments — Evaluate whether your data infrastructure is ready for machine learning.",
+      "Executive Education — Demystify AI capabilities for C-suite leadership and set realistic expectations.",
+      "AI Roadmap Development — Deliver a step-by-step technical plan your internal team can execute.",
+    ],
+  },
+  {
+    title: "Custom Generative AI & Automation",
+    description:
+      "We build scalable intelligent systems that understand your proprietary data and automate complex workflows.",
+    items: [
+      "Foundational Model Integration — Fine-tune and deploy LLMs as internal knowledge bases, customer agents, or analysis tools.",
+      "Workflow Automation — Build pipelines that read documents, extract key data, and generate reports automatically.",
+      "Conversational AI — Design multi-turn chatbots that interact naturally and execute complex tasks across domains.",
+      "Domain-Specific LLM Solutions — Tailor language models for specialized fields like law, finance, and healthcare.",
+    ],
+  },
+  {
+    title: "Multi-Modal Data Analytics",
+    description:
+      "Unlock value from your unstructured text, video, and audio data with systems that see, hear, and understand.",
+    items: [
+      "Media & Content Intelligence — Automatically analyze, tag, and summarize massive video and audio archives.",
+      "Advanced Computer Vision — Custom vision systems for quality control, monitoring, or healthcare diagnostics.",
+      "Sensor & Audio Processing — Detect anomalies, recognize speech patterns, and monitor environments.",
+      "Interactive Retrieval — Build search systems that understand natural language queries across multi-modal data.",
+    ],
+  },
+  {
+    title: "AI Auditing, Optimization & Scaling",
+    description:
+      "Ensure your AI systems run safely, accurately, and cost-effectively in production.",
+    items: [
+      "Model Robustness & Safety Audits — Stress-test models to prevent hallucinations, identify biases, and ensure reliability.",
+      "Efficiency & Cost Optimization — Restructure ML pipelines to run faster and cut cloud infrastructure costs.",
+      "Continuous Evaluation — Design automated monitoring for model degradation and data drift over time.",
+      "Scalability Architecture — Ensure your AI systems can handle growth without performance degradation.",
+    ],
+  },
+];
+
+export default function Services() {
+  return (
+    <main className="max-w-5xl mx-auto px-6 py-20">
+      <p className="text-sm font-mono text-[var(--accent)] tracking-wider uppercase">
+        Services
+      </p>
+      <h1 className="mt-3 text-4xl font-bold tracking-tight">
+        How We Help
+      </h1>
+      <p className="mt-4 text-lg text-[var(--muted)] max-w-2xl">
+        We offer specialized, high-impact AI consulting — not generic
+        software development. Every engagement is tailored to deliver
+        measurable business outcomes.
+      </p>
+
+      <div className="mt-16 space-y-16">
+        {services.map((service) => (
+          <section key={service.title}>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {service.title}
+            </h2>
+            <p className="mt-3 text-[var(--muted)]">{service.description}</p>
+            <ul className="mt-6 space-y-3">
+              {service.items.map((item) => (
+                <li
+                  key={item}
+                  className="flex gap-3 text-sm text-[var(--muted)]"
+                >
+                  <span className="text-[var(--accent)] mt-0.5">▸</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+
+      {/* Engagement Models */}
+      <section className="mt-20 border-t border-[var(--border)] pt-16">
+        <h2 className="text-2xl font-semibold tracking-tight">
+          Engagement Models
+        </h2>
+        <p className="mt-3 text-[var(--muted)]">
+          Flexible options designed for your needs and timeline.
+        </p>
+        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
+            <h3 className="font-semibold">Hourly Advisory</h3>
+            <p className="mt-3 text-sm text-[var(--muted)]">
+              Pre-paid blocks of expert time for strategy calls,
+              architecture reviews, and technical guidance.
+            </p>
+          </div>
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
+            <h3 className="font-semibold">AI Roadmap Sprint</h3>
+            <p className="mt-3 text-sm text-[var(--muted)]">
+              A 2-to-4-week intensive engagement delivering a comprehensive
+              AI blueprint your team can execute.
+            </p>
+          </div>
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
+            <h3 className="font-semibold">Fractional AI Leadership</h3>
+            <p className="mt-3 text-sm text-[var(--muted)]">
+              Monthly retainer as your part-time Chief AI Officer —
+              guiding architecture, reviewing models, and mentoring your
+              engineering team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-20 text-center">
+        <Link
+          href="/contact"
+          className="inline-block px-8 py-3 bg-[var(--accent)] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+        >
+          Discuss Your Project
+        </Link>
+      </section>
+    </main>
+  );
+}

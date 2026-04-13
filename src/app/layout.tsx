@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alexander AI Consulting — AI Research & Consulting Blog",
+  title: "Alexander AI Consulting — Enterprise AI Strategy & Solutions",
   description:
-    "Insights on artificial intelligence, machine learning, and building intelligent systems. By Jia-Hong Kay Huang.",
+    "Premier AI consultancy specializing in multi-modal machine learning, generative AI, and enterprise AI transformation. Founded by a Marie Curie Fellow with experience at Google, Amazon, and Microsoft Research.",
 };
 
 export default function RootLayout({
@@ -29,25 +29,31 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-gray-900">
-        <nav className="border-b border-gray-100">
-          <div className="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold">
-              Alexander AI Consulting
+      <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)]">
+        <nav className="border-b border-[var(--border)]">
+          <div className="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <Link href="/" className="text-xl font-bold tracking-tight">
+              Alexander AI
             </Link>
-            <div className="flex gap-6 text-sm text-gray-600">
-              <Link href="/" className="hover:text-gray-900">
+            <div className="flex gap-8 text-sm text-[var(--muted)]">
+              <Link href="/services" className="hover:text-white transition-colors">
+                Services
+              </Link>
+              <Link href="/blog" className="hover:text-white transition-colors">
                 Blog
               </Link>
-              <Link href="/about" className="hover:text-gray-900">
-                About
+              <Link href="/founder" className="hover:text-white transition-colors">
+                Founder
+              </Link>
+              <Link href="/contact" className="hover:text-white transition-colors">
+                Contact
               </Link>
             </div>
           </div>
         </nav>
         <div className="flex-1">{children}</div>
-        <footer className="border-t border-gray-100 py-8">
-          <div className="max-w-3xl mx-auto px-6 text-center text-sm text-gray-500">
+        <footer className="border-t border-[var(--border)] py-8">
+          <div className="max-w-5xl mx-auto px-6 text-center text-sm text-[var(--muted)]">
             © {new Date().getFullYear()} Alexander AI Consulting. All rights reserved.
           </div>
         </footer>
