@@ -2,47 +2,47 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Enterprise AI Strategy & Readiness",
+    title: "AI Strategy & Executive Advisory",
     description:
-      "Many businesses know they need AI but have no idea where to start. We act as your strategic entry point.",
+      "You know you need AI, but where do you start? We help leadership teams cut through the hype and make informed decisions.",
     items: [
-      "Use-Case Identification — Assess current workflows to find where AI provides the highest ROI.",
-      "AI Feasibility Assessments — Evaluate whether your data infrastructure is ready for machine learning.",
-      "Executive Education — Demystify AI capabilities for C-suite leadership and set realistic expectations.",
-      "AI Roadmap Development — Deliver a step-by-step technical plan your internal team can execute.",
+      "Identify the highest-ROI AI use cases within your existing workflows and operations.",
+      "Assess whether your data infrastructure and team are truly ready for machine learning.",
+      "Educate C-suite executives on AI capabilities, limitations, and realistic timelines.",
+      "Deliver a comprehensive AI roadmap — a step-by-step blueprint your internal team can execute.",
     ],
   },
   {
-    title: "Custom Generative AI & Automation",
+    title: "Generative AI & LLM Architecture",
     description:
-      "We build scalable intelligent systems that understand your proprietary data and automate complex workflows.",
+      "We design the architecture and strategy for your generative AI systems — your engineers build it.",
     items: [
-      "Foundational Model Integration — Fine-tune and deploy LLMs as internal knowledge bases, customer agents, or analysis tools.",
-      "Workflow Automation — Build pipelines that read documents, extract key data, and generate reports automatically.",
-      "Conversational AI — Design multi-turn chatbots that interact naturally and execute complex tasks across domains.",
-      "Domain-Specific LLM Solutions — Tailor language models for specialized fields like law, finance, and healthcare.",
+      "Evaluate and select the right foundation models (GPT, Llama, Gemini, etc.) for your specific use case.",
+      "Design fine-tuning strategies, RAG pipelines, and prompt engineering frameworks for your proprietary data.",
+      "Architect conversational AI systems for customer service, internal knowledge bases, or domain-specific applications.",
+      "Review and optimize existing LLM implementations for accuracy, cost, and latency.",
     ],
   },
   {
-    title: "Multi-Modal Data Analytics",
+    title: "Multi-Modal AI & Computer Vision Advisory",
     description:
-      "Unlock value from your unstructured text, video, and audio data with systems that see, hear, and understand.",
+      "Expert guidance on systems that process text, images, video, and audio together.",
     items: [
-      "Media & Content Intelligence — Automatically analyze, tag, and summarize massive video and audio archives.",
-      "Advanced Computer Vision — Custom vision systems for quality control, monitoring, or healthcare diagnostics.",
-      "Sensor & Audio Processing — Detect anomalies, recognize speech patterns, and monitor environments.",
-      "Interactive Retrieval — Build search systems that understand natural language queries across multi-modal data.",
+      "Design architectures for video understanding, media intelligence, and content analysis pipelines.",
+      "Advise on computer vision solutions for healthcare diagnostics, quality control, or autonomous monitoring.",
+      "Evaluate and recommend approaches for multi-modal retrieval, search, and recommendation systems.",
+      "Guide your team on integrating vision-language models into existing products.",
     ],
   },
   {
-    title: "AI Auditing, Optimization & Scaling",
+    title: "AI Model Auditing & Optimization",
     description:
-      "Ensure your AI systems run safely, accurately, and cost-effectively in production.",
+      "Your AI is live — but is it safe, accurate, and cost-efficient? We find out.",
     items: [
-      "Model Robustness & Safety Audits — Stress-test models to prevent hallucinations, identify biases, and ensure reliability.",
-      "Efficiency & Cost Optimization — Restructure ML pipelines to run faster and cut cloud infrastructure costs.",
-      "Continuous Evaluation — Design automated monitoring for model degradation and data drift over time.",
-      "Scalability Architecture — Ensure your AI systems can handle growth without performance degradation.",
+      "Stress-test models for robustness, hallucinations, bias, and edge-case failures.",
+      "Analyze and restructure ML pipelines to reduce compute costs and improve inference speed.",
+      "Design evaluation frameworks and automated monitoring for model degradation and data drift.",
+      "Provide independent technical due diligence on AI systems for investors or acquirers.",
     ],
   },
 ];
@@ -54,12 +54,12 @@ export default function Services() {
         Services
       </p>
       <h1 className="mt-3 text-4xl font-bold tracking-tight">
-        How We Help
+        Strategic AI Consulting
       </h1>
       <p className="mt-4 text-lg text-[var(--muted)] max-w-2xl">
-        We offer specialized, high-impact AI consulting — not generic
-        software development. Every engagement is tailored to deliver
-        measurable business outcomes.
+        You&apos;re not hiring a developer. You&apos;re engaging a senior AI
+        architect with a Ph.D. and Big Tech research experience to solve
+        your hardest problems — so your team can build with confidence.
       </p>
 
       <div className="mt-16 space-y-16">
@@ -87,12 +87,11 @@ export default function Services() {
       {/* How We Work */}
       <section className="mt-20 border-t border-[var(--border)] pt-16">
         <h2 className="text-2xl font-semibold tracking-tight">
-          How We Work
+          How Engagements Work
         </h2>
         <p className="mt-3 text-[var(--muted)] max-w-2xl">
-          We offer premium hourly consulting sold in pre-paid blocks. You
-          get direct access to a Ph.D.-level AI expert with Big Tech
-          experience — not a junior associate.
+          All consulting is delivered in pre-paid hourly blocks. This keeps
+          engagements focused, predictable, and results-driven for both sides.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -100,38 +99,40 @@ export default function Services() {
             <p className="text-2xl font-bold">10 hrs</p>
             <p className="mt-1 text-sm text-[var(--muted)]">Starter Block</p>
             <p className="mt-4 text-sm text-[var(--muted)]">
-              Ideal for a focused strategy session, architecture review, or
-              initial AI feasibility assessment.
+              A focused engagement — ideal for an AI feasibility assessment,
+              architecture review, or strategic deep-dive on a specific
+              challenge.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--accent)]/30 bg-[var(--card)] p-6 ring-1 ring-[var(--accent)]/20">
             <p className="text-2xl font-bold">20 hrs</p>
             <p className="mt-1 text-sm text-[var(--accent)]">Most Popular</p>
             <p className="mt-4 text-sm text-[var(--muted)]">
-              Enough for a comprehensive AI roadmap, model auditing, or
-              hands-on technical guidance for your engineering team.
+              Enough to deliver a full AI roadmap, audit an existing system,
+              or provide sustained advisory across multiple technical
+              decisions.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
             <p className="text-2xl font-bold">40 hrs</p>
             <p className="mt-1 text-sm text-[var(--muted)]">Deep Engagement</p>
             <p className="mt-4 text-sm text-[var(--muted)]">
-              For ongoing advisory, fractional AI leadership, or complex
-              multi-phase projects requiring sustained expert involvement.
+              Fractional AI leadership — ongoing strategic advisory, team
+              mentoring, and architecture guidance across a longer horizon.
             </p>
           </div>
         </div>
 
         <div className="mt-12 space-y-8">
           <div>
-            <h3 className="font-semibold">What&apos;s Included</h3>
+            <h3 className="font-semibold">What You Get</h3>
             <ul className="mt-4 space-y-2">
               {[
-                "Live strategy and architecture calls",
-                "Code and model architecture reviews",
-                "Technical roadmap and blueprint drafting",
-                "Research and analysis for your specific implementation challenges",
-                "Written recommendations and documentation",
+                "Strategic advisory calls and working sessions",
+                "Architecture design and technical decision guidance",
+                "Model and pipeline evaluation with written recommendations",
+                "AI roadmaps and technical blueprints your team can execute",
+                "Research and analysis tailored to your specific challenges",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-[var(--muted)]">
                   <span className="text-[var(--accent)]">✓</span>
@@ -142,13 +143,13 @@ export default function Services() {
           </div>
 
           <div>
-            <h3 className="font-semibold">How It Works</h3>
+            <h3 className="font-semibold">The Process</h3>
             <ul className="mt-4 space-y-2">
               {[
-                "Choose a pre-paid block (10, 20, or 40 hours).",
-                "Hours are drawn down as we work together.",
-                "Blocks expire within 60 days to keep momentum.",
-                "Unused hours are non-refundable — this ensures commitment from both sides.",
+                "We start with a free 30-minute discovery call to understand your challenge.",
+                "Choose a pre-paid block that fits your scope (10, 20, or 40 hours).",
+                "Hours are drawn down as we work together — you always know where you stand.",
+                "All blocks expire within 60 days to maintain focus and momentum.",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-[var(--muted)]">
                   <span className="text-[var(--accent)]">▸</span>
@@ -159,14 +160,14 @@ export default function Services() {
           </div>
 
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="font-semibold">A Note on Scope</h3>
+            <h3 className="font-semibold">Advisory, Not Implementation</h3>
             <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">
-              You are engaging a senior AI architect and strategist. Billable
-              work includes high-level architecture design, model evaluation,
-              algorithm optimization, and strategic guidance. For
-              implementation tasks like data cleaning scripts or basic
-              pipeline setup, we recommend pairing our advisory with your
-              internal engineering team or a dedicated developer.
+              To be clear: you are engaging a senior AI strategist and
+              architect. I design the solution, evaluate the options, and
+              guide your team on how to build it right. I do not write
+              production code, clean datasets, or manage deployments. If you
+              need hands-on engineering, I can help you define exactly what
+              to hire for — but that&apos;s your team&apos;s job, not mine.
             </p>
           </div>
         </div>
@@ -177,7 +178,7 @@ export default function Services() {
           href="/contact"
           className="inline-block px-8 py-3 bg-[var(--accent)] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
         >
-          Discuss Your Project
+          Book a Free Discovery Call
         </Link>
       </section>
     </main>
