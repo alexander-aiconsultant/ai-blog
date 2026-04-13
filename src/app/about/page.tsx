@@ -20,11 +20,12 @@ export default function About() {
           implementation support, feel free to reach out.
         </p>
         <p>
+          Get in touch:{" "}
           <a
             href="mailto:alexander.aiconsultant@gmail.com"
             className="text-blue-600 hover:underline"
           >
-            Get in touch →
+            alexander.aiconsultant@gmail.com
           </a>
         </p>
       </div>
