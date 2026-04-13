@@ -90,11 +90,11 @@ export default function Founder() {
         </h2>
         <div className="mt-8 space-y-4">
           {[
-            { company: "Google", role: "Research Intern — Active Speaker Detection, Patent Filing", location: "Mountain View" },
-            { company: "Amazon", role: "Applied Scientist Intern — Vision Transformer, Audio Transformer", location: "Seattle" },
-            { company: "Microsoft Research", role: "ML Research Intern — Causal Video Summarization, Medical AI", location: "Cambridge" },
-            { company: "MediaTek", role: "ML Research Intern — Retinal Image Captioning, Image Inpainting", location: "Hsinchu" },
-            { company: "BBC R&D", role: "ML Research Intern — News Video Summarization", location: "London" },
+            { company: "Amazon", role: "Applied Scientist — Vision Transformer, Audio Transformer", location: "Seattle" },
+            { company: "Google", role: "Research Scientist — Active Speaker Detection, Patent Filing", location: "Mountain View" },
+            { company: "Microsoft Research", role: "ML Researcher — Causal Video Summarization, Medical AI", location: "Cambridge" },
+            { company: "MediaTek", role: "ML Researcher — Retinal Image Captioning, Image Inpainting", location: "Hsinchu" },
+            { company: "BBC R&D", role: "ML Researcher — News Video Summarization", location: "London" },
           ].map((exp) => (
             <div
               key={exp.company}
