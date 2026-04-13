@@ -78,7 +78,7 @@ async function main() {
   console.log(`Authenticated as: ${user.name}`);
 
   // Set your blog URL here once deployed
-  const canonicalUrl = `https://ai-blog-brown-one.vercel.app/blog/${slug}`;
+  const canonicalUrl = `https://alexander-aiconsultant.vercel.app/blog/${slug}`;
 
   const result = await publishToMedium(
     token,
