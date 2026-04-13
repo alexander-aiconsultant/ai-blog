@@ -84,35 +84,89 @@ export default function Services() {
         ))}
       </div>
 
-      {/* Engagement Models */}
+      {/* How We Work */}
       <section className="mt-20 border-t border-[var(--border)] pt-16">
         <h2 className="text-2xl font-semibold tracking-tight">
-          Engagement Models
+          How We Work
         </h2>
-        <p className="mt-3 text-[var(--muted)]">
-          Flexible options designed for your needs and timeline.
+        <p className="mt-3 text-[var(--muted)] max-w-2xl">
+          We offer premium hourly consulting sold in pre-paid blocks. You
+          get direct access to a Ph.D.-level AI expert with Big Tech
+          experience — not a junior associate.
         </p>
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-3">
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="font-semibold">Hourly Advisory</h3>
-            <p className="mt-3 text-sm text-[var(--muted)]">
-              Pre-paid blocks of expert time for strategy calls,
-              architecture reviews, and technical guidance.
+            <p className="text-2xl font-bold">10 hrs</p>
+            <p className="mt-1 text-sm text-[var(--muted)]">Starter Block</p>
+            <p className="mt-4 text-sm text-[var(--muted)]">
+              Ideal for a focused strategy session, architecture review, or
+              initial AI feasibility assessment.
+            </p>
+          </div>
+          <div className="rounded-xl border border-[var(--accent)]/30 bg-[var(--card)] p-6 ring-1 ring-[var(--accent)]/20">
+            <p className="text-2xl font-bold">20 hrs</p>
+            <p className="mt-1 text-sm text-[var(--accent)]">Most Popular</p>
+            <p className="mt-4 text-sm text-[var(--muted)]">
+              Enough for a comprehensive AI roadmap, model auditing, or
+              hands-on technical guidance for your engineering team.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="font-semibold">AI Roadmap Sprint</h3>
-            <p className="mt-3 text-sm text-[var(--muted)]">
-              A 2-to-4-week intensive engagement delivering a comprehensive
-              AI blueprint your team can execute.
+            <p className="text-2xl font-bold">40 hrs</p>
+            <p className="mt-1 text-sm text-[var(--muted)]">Deep Engagement</p>
+            <p className="mt-4 text-sm text-[var(--muted)]">
+              For ongoing advisory, fractional AI leadership, or complex
+              multi-phase projects requiring sustained expert involvement.
             </p>
           </div>
+        </div>
+
+        <div className="mt-12 space-y-8">
+          <div>
+            <h3 className="font-semibold">What&apos;s Included</h3>
+            <ul className="mt-4 space-y-2">
+              {[
+                "Live strategy and architecture calls",
+                "Code and model architecture reviews",
+                "Technical roadmap and blueprint drafting",
+                "Research and analysis for your specific implementation challenges",
+                "Written recommendations and documentation",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 text-sm text-[var(--muted)]">
+                  <span className="text-[var(--accent)]">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold">How It Works</h3>
+            <ul className="mt-4 space-y-2">
+              {[
+                "Choose a pre-paid block (10, 20, or 40 hours).",
+                "Hours are drawn down as we work together.",
+                "Blocks expire within 60 days to keep momentum.",
+                "Unused hours are non-refundable — this ensures commitment from both sides.",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 text-sm text-[var(--muted)]">
+                  <span className="text-[var(--accent)]">▸</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="font-semibold">Fractional AI Leadership</h3>
-            <p className="mt-3 text-sm text-[var(--muted)]">
-              Monthly retainer as your part-time Chief AI Officer —
-              guiding architecture, reviewing models, and mentoring your
-              engineering team.
+            <h3 className="font-semibold">A Note on Scope</h3>
+            <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">
+              You are engaging a senior AI architect and strategist. Billable
+              work includes high-level architecture design, model evaluation,
+              algorithm optimization, and strategic guidance. For
+              implementation tasks like data cleaning scripts or basic
+              pipeline setup, we recommend pairing our advisory with your
+              internal engineering team or a dedicated developer.
             </p>
           </div>
         </div>
