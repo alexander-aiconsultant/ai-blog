@@ -160,14 +160,13 @@ export default function Services() {
           </div>
 
           <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-            <h3 className="font-semibold">Advisory, Not Implementation</h3>
+            <h3 className="font-semibold">Maximizing Your Investment</h3>
             <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">
-              To be clear: you are engaging a senior AI strategist and
-              architect. I design the solution, evaluate the options, and
-              guide your team on how to build it right. I do not write
-              production code, clean datasets, or manage deployments. If you
-              need hands-on engineering, I can help you define exactly what
-              to hire for — but that&apos;s your team&apos;s job, not mine.
+              Every hour you spend with us is focused on the decisions that
+              matter most — architecture design, model selection, algorithm
+              strategy, and technical leadership. We operate at the level
+              where a single insight can save your team months of engineering
+              effort and significant infrastructure costs.
             </p>
           </div>
         </div>
