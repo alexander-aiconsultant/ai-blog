@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       <header className="mb-16">
-        <h1 className="text-4xl font-bold tracking-tight">AI Insights</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Alexander AI Consulting</h1>
         <p className="mt-4 text-lg text-gray-600">
-          Thoughts on AI, machine learning, and building intelligent systems.
+          Insights on AI, machine learning, and building intelligent systems.
         </p>
       </header>
 

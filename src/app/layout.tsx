@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Insights — AI Research & Consulting Blog",
+  title: "Alexander AI Consulting — AI Research & Consulting Blog",
   description:
-    "Insights on artificial intelligence, machine learning, and building intelligent systems.",
+    "Insights on artificial intelligence, machine learning, and building intelligent systems. By Jia-Hong Kay Huang.",
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
         <nav className="border-b border-gray-100">
           <div className="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
             <Link href="/" className="text-xl font-bold">
-              AI Insights
+              Alexander AI Consulting
             </Link>
             <div className="flex gap-6 text-sm text-gray-600">
               <Link href="/" className="hover:text-gray-900">
@@ -48,7 +48,7 @@ export default function RootLayout({
         <div className="flex-1">{children}</div>
         <footer className="border-t border-gray-100 py-8">
           <div className="max-w-3xl mx-auto px-6 text-center text-sm text-gray-500">
-            © {new Date().getFullYear()} AI Insights. All rights reserved.
+            © {new Date().getFullYear()} Alexander AI Consulting. All rights reserved.
           </div>
         </footer>
       </body>
