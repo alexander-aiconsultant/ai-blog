@@ -3,9 +3,10 @@ import Link from "next/link";
 export default function About() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold tracking-tight">
-        About
-      </h1>
+      <h1 className="text-4xl font-bold tracking-tight">About</h1>
+      <p className="mt-6 text-lg text-gray-600">Coming soon.</p>
+
+      {/* TODO: Uncomment when ready to publish
 
       <section className="mt-10 space-y-6 text-gray-700 text-lg leading-relaxed">
         <p>
@@ -116,6 +117,8 @@ export default function About() {
           </p>
         </div>
       </section>
+
+      */}
     </main>
   );
 }
